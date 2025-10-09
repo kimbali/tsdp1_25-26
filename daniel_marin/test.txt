@@ -1,1 +1,25 @@
-text
+Avances recientes en computación cuántica (octubre 2025)
+
+1) Premio Nobel de Física 2025
+El 7 de octubre de 2025 se reconoció con el Premio Nobel de Física a investigadores pioneros cuyas experimentaciones sobre efectos cuánticos en circuitos eléctricos macroscópicos sentaron las bases para muchas tecnologías cuánticas modernas. Sus trabajos históricos han impulsado desarrollos en computación cuántica, sensores cuánticos y criptografía post-cuántica.
+
+2) Escalabilidad y qubits a temperatura ambiente
+Recientes proyectos experimentales han demostrado la posibilidad de operar conjuntos extensos de qubits a temperaturas cercanas a ambiente usando átomos neutros, lo que facilita la escalabilidad y reduce algunos costes asociados al enfriamiento extremo. Estos sistemas han mejorado además los tiempos de coherencia, haciendo viable ejecutar algoritmos más largos.
+
+3) Qubits de larga duración
+Nuevos diseños de qubits y avances en control y aislamiento han permitido aumentar considerablemente el tiempo en que un qubit mantiene su estado cuántico (coherencia). Algunos prototipos experimentales muestran duraciones mucho mayores que las habituales, lo que abre la puerta a cálculos cuánticos más complejos y fiables.
+
+4) Convergencia entre IA y computación cuántica
+La inteligencia artificial se está empleando para optimizar tanto el hardware cuántico (diseño de qubits y calibración) como el software (descubrimiento de algoritmos y corrección de errores). La combinación promete acelerar el desarrollo práctico de aplicaciones industriales en química computacional, optimización y descubrimiento de fármacos.
+
+5) Criptografía y preparación para la era cuántica
+Con el progreso en potencia cuántica, instituciones y gobiernos están revisando estándares de seguridad y migrando hacia esquemas de cifrado resistentes a ataques cuánticos (criptografía post-cuántica). La preparación incluye evaluación de infraestructuras críticas, planes de migración y actualización de protocolos de comunicación segura.
+
+6) Aplicaciones emergentes
+Más allá de la computación pura, las tecnologías cuánticas están impulsando avances en metrología (sensores cuánticos extremadamente sensibles), comunicaciones seguras y simulación de materiales. Estas aplicaciones tienen el potencial de impactar industrias como la medicina, la energía y la logística.
+
+7) Desafíos pendientes
+Persisten retos técnicos importantes: corrección de errores cuánticos robusta y eficiente, fabricación masiva de qubits con baja tasa de defectos, integración de sistemas híbridos clásico-cuánticos y reducción de costes de infraestructura. Superar estos obstáculos marcará el paso de prototipos a dispositivos útiles a escala industrial.
+
+Conclusión
+La computación cuántica está en una fase de transición: los hitos experimentales y la integración con IA acercan la tecnología a aplicaciones prácticas, mientras que la comunidad científica y la industria trabajan en superar los retos de estabilidad, escalabilidad y seguridad. El ritmo de avance sugiere un futuro con herramientas cuánticas relevantes para investigación y sectores productivos en los próximos años.
