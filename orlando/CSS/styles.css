@@ -1,0 +1,35 @@
+
+.fila {
+  display: flex;
+}  
+
+.caixa1 {
+  background: green;
+  color: white;
+  height: 200px;
+  width: 100px;
+  text-align: center;
+}
+
+
+.caixa2 {
+  background: red;
+  color: white;
+  height: 100px;
+  width: 200px;
+ text-align:  start;
+}
+
+
+
+button{
+    background-color: cyan;
+}
+
+.caixa3 {
+  background: black;
+  color: white;  
+  height: 125px;
+  width: 250px;
+  text-align: end;
+}
