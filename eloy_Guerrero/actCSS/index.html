@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MiniWeb — Botigueta Geek</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="logo">La Botigueta Geek</h1>
+      <nav class="nav">
+        <a href="#inici">Inici</a>
+        <a href="#productes">Productes</a>
+        <a href="#contacte">Contacte</a>
+        <button id="toggle">Canvia Tema</button>
+      </nav>
+    </header>
+
+    <main id="inici">
+      <section class="hero">
+        <h2>Benvinguts!</h2>
+        <p>Gadgets, consoles i més.</p>
+        <a href="#productes" class="btn btn-primari">Veure productes</a>
+        <a href="#contacte" class="btn btn-secundari">Contacta</a>
+        <a href="#" class="btn btn-primari especial">Veure productes</a>
+      </section>
+
+      <section id="productes" class="cards">
+        <!-- Anirem afegint targetes -->
+        <article class="card">
+          <h3>Consola Retro</h3>
+          <p>Clàssics dels 80-90.</p>
+          <a href="#" class="btn btn-primari">Comprar</a>
+        </article>
+      </section>
+
+      <section id="contacte" class="contacte">
+        <h2>Contacte</h2>
+        <form>
+          <label for="nom">Nom</label>
+          <input id="nom" type="text" placeholder="El teu nom" />
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="tu@exemple.com" />
+          <button type="submit" class="btn btn-primari">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; 2025 Botigueta Geek</small>
+      <script src="script.js"></script>
+    </footer>
+  </body>
+</html>
