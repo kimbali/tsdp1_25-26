@@ -1,0 +1,101 @@
+/* GENERAL DE LA PÀGINA */
+* {
+  transition: all 0.5s;
+}
+
+body {
+  margin: 40px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: rgb(2, 2, 158);
+}
+
+/* EXPLÍCIT DEL COMPONENT SENCER LABEL */
+label {
+  position: relative;
+  margin: 0 0 32px;
+  width: fit-content;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+input {
+  display: block;
+  background-color: rgb(206, 206, 239);
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 51);
+  width: 250px;
+  height: 40px;
+  padding: 0 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.emoji {
+  position: absolute;
+  right: 12px;
+  top: 4px;
+  font-size: 28px;
+}
+
+.emoji::after {
+  content: '🙂';
+}
+
+.helper {
+  font-size: 12px;
+  margin: 4px 12px;
+  color: rgb(126, 122, 122);
+}
+
+/* QUAN L'USUARI FA CLICK AL ELEMENT */
+label:focus-within {
+  .label {
+    top: -18px;
+    left: 0px;
+    color: rgb(60, 60, 240);
+  }
+
+  input {
+    border-bottom: 2px solid rgb(58, 58, 242);
+  }
+
+  .emoji {
+    transform: rotate(180deg);
+  }
+}
+
+/* ESTILS DE LA CLASSE ERROR */
+.error {
+  input {
+    background-color: rgb(243, 176, 176);
+    border-bottom: 2px solid rgb(167, 2, 2);
+  }
+
+  .label {
+    color: rgb(167, 2, 2);
+  }
+
+  .emoji::after {
+    content: '❌';
+  }
+}
+
+label.error:focus-within {
+  .label {
+    color: rgb(167, 2, 2);
+  }
+
+  input {
+    border-bottom: 2px solid rgb(167, 2, 2);
+  }
+}
