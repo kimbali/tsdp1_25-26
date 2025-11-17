@@ -1,0 +1,28 @@
+body{
+    margin: 40px 20px;
+}
+input{
+    background-color: rgb(187, 237, 255);
+    margin-bottom: 12px;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    height: 40px;
+    width: 250px;
+    display: block;
+}
+label{
+    position: relative;
+}
+.label{
+    color: black;
+    position: absolute;
+    top: 12px;
+}
+label:focus-within{
+    color: blue;
+    .label{
+        top: -20px;
+    }
+}
