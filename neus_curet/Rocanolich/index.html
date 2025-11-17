@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="rocanolich, Marc Pimienta, cursa, Aixovall"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocanolich race</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/loogo_roca.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/togeojson/0.16.0/togeojson.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <a href="#programa">PROGRAMA</a>
+
+      <a href="reglament.html">REGLAMENT</a>
+    </nav>
+
+    <a
+      class="fixed-button"
+      id="fixed-button"
+      target="_blank"
+      href="https://topcrono.net/ca/esdeveniments/rocanolich-memorial-marc-pimienta/"
+      >Inscriu-te ara</a
+    >
+
+    <header class="header" id="header">
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <img
+          class="logo_roca"
+          src="./assets/img/logo_rocanolich.png"
+          alt="Logo Rocanolich"
+        />
+        <h1 class="display-4 fw-bold">Benvinguts a la Rocanolich Race</h1>
+        <p class="lead">Un homenatge a la passió per la muntanya</p>
+        <div class="space"></div>
+        <p class="run"><strong>🏔️ 3 curses de muntanya 🏔️</strong></p>
+        <p class="inclusive">una d'elles 100% inclusiva!</p>
+      </div>
+    </header>
+
+    <div class="video-container">
+      <iframe
+        id="youtube-video"
+        width="560"
+        height="315"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Secció d'història -->
+    <section class="section background">
+      <div class="container serveis-container">
+        <div class="row align-items-center">
+          <div class="race-container">
+            <img
+              class="foto-Marc"
+              src="./assets/img/Imatge_Marc_negre.svg"
+              alt="Record del Marc"
+            />
+            <div class="space"></div>
+            <div class="space"></div>
+
+            <h2 class="section-title">Homenatge a Marc Pimienta</h2>
+            <div class="space"></div>
+            <p>
+              Cada projecte té un punt d’inici, i el nostre, tot i néixer de la
+              tristesa, s’ha convertit en un
+              <span class="highlight">homenatge ple de significat</span>.
+            </p>
+            <p>
+              La pèrdua d’un company, d’un referent, d’un amic… d’aquella
+              persona que sempre deixava empremta en els qui l’envoltaven, ens
+              va colpejar profundament. Però, enmig del buit, va néixer una
+              necessitat:
+              <span class="highlight">recordar-lo com ell hauria volgut</span>,
+              amb passió, esforç i muntanya.
+            </p>
+            <p>
+              Des del
+              <span class="highlight"
+                >Centre de Formació Professional d’Aixovall</span
+              >, vam decidir transformar el dolor en acció i organitzar una
+              cursa de muntanya en honor al Marc. Una cursa que no és només una
+              competició, sinó un símbol de superació, companyonia i llegat.
+            </p>
+
+            <p class="quote">
+              "Que cada passa sigui un homenatge, cada respiració un record i
+              cada repte superat, un vincle etern amb ell en els nostres cors."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secció Rocanolich Race -->
+    <section class="section background">
+      <div class="container serveis-container">
+        <div class="rocanolich-race">
+          <h2 class="section-title">Rocanolich Race</h2>
+
+          <div class="space"></div>
+
+          <div class="countdown">
+            <div>
+              <p class="countdown-title">Rocanolich Race</p>
+              <p class="countdown-date">10 de Maig de 2025</p>
+            </div>
+            <div id="timer" class="time"><span>00d 00h 00m 00s</span></div>
+          </div>
+
+          <div class="space"></div>
+          <div class="space"></div>
+
+          <p class="description">
+            Aquesta segona edició de la Rocanolich - Memorial Marc Pimienta
+            presenta
+            <span class="highlight">tres itineraris diferents</span> per tal
+            d'oferir
+            <span class="highlight">
+              una prova adaptada a tots els públics.</span
+            >
+            Des d'aquells corredors experimentats, passant pels amants de la
+            muntanya fins als que volen participar en l'esdeveniment amb un
+            vessant no competitiu.
+            <strong>Us esperem!</strong>
+          </p>
+          <div class="space"></div>
+          <p class="highlight">
+            🚀 Com a novetat, aquest any la cursa és puntuable per la Copa
+            d'Andorra!
+          </p>
+        </div>
+
+        <!-- <div>
+          <div class="race-card flex-grow-1 img-circuit">
+            <img
+              src="./assets/img/logo_circuit_llarg.png"
+              alt="Itinerari"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="race-card flex-grow-1 img-circuit">
+            <img
+              src="./assets/img/logo_circuit_curt.png"
+              alt="Itinerari"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="race-card flex-grow-1 img-circuit">
+            <img
+              src="./assets/img/logo_caminada_inclusiva.png"
+              alt="Itinerari"
+              class="img-fluid"
+            />
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <div class="race-container">
+      <div class="race-card long-race">
+        <div class="race-content">
+          <div>
+            <div class="race-content-title">
+              <i class="fas fa-mountain race-icon"></i>
+              <h3 class="race-title">Cursa Llarga</h3>
+            </div>
+            <div class="race-info">
+              <div>
+                <h4>Distància</h4>
+                <p>15 km</p>
+              </div>
+              <div>
+                <h4>Desnivell</h4>
+                <p>1350 m</p>
+              </div>
+              <div>
+                <h4>Hora</h4>
+                <p>9:00 AM</p>
+              </div>
+              <div>
+                <h4>Preu</h4>
+                <p>20€</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="grafic">
+            <canvas id="grafLlarga"></canvas>
+          </div> -->
+
+          <div class="race-btns">
+            <a
+              href="https://es.wikiloc.com/rutas-senderismo/rocanolich-2024-cursa-llarga-166641109"
+              target="_blank"
+              class="download-link"
+              ><i class="fa-solid fa-map-location-dot"></i> Wikiloc</a
+            >
+            <a
+              href="./assets/tracks/13km_Rocanolich.gpx"
+              download="rocanolich_15k.gpx"
+              class="download-link"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="race-card medium-race">
+        <div class="race-content">
+          <div>
+            <div class="race-content-title">
+              <i class="fas fa-running race-icon"></i>
+              <h3 class="race-title">Cursa curta</h3>
+            </div>
+
+            <div class="race-info">
+              <div>
+                <h4>Distància</h4>
+                <p>10 km</p>
+              </div>
+              <div>
+                <h4>Desnivell</h4>
+                <p>660 m</p>
+              </div>
+              <div>
+                <h4>Hora</h4>
+                <p>10:00 AM</p>
+              </div>
+              <div>
+                <h4>Preu</h4>
+                <p>16€</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="grafic">
+            <canvas id="grafCurta"></canvas>
+          </div> -->
+
+          <div class="race-btns">
+            <a
+              href="https://es.wikiloc.com/rutas-senderismo/rocanolich-curta-2-0-169853294"
+              target="_blank"
+              class="download-link"
+              ><i class="fa-solid fa-map-location-dot"></i> Wikiloc</a
+            >
+            <a
+              href="./assets/tracks/10km_rocanolich.gpx"
+              download="rocanolich_10K.gpx"
+              class="download-link"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="race-card inclusive-race">
+        <div class="race-content">
+          <div>
+            <div class="race-content-title">
+              <i class="fas fa-walking race-icon"></i>
+              <h3 class="race-title">Caminada Inclusiva</h3>
+            </div>
+
+            <div class="race-info">
+              <div>
+                <h4>Distància</h4>
+                <p>4 km</p>
+              </div>
+              <div>
+                <h4>Desnivell</h4>
+                <p>20 m</p>
+              </div>
+              <div>
+                <h4>Hora</h4>
+                <p>10:00 AM</p>
+              </div>
+              <div>
+                <h4>Preu</h4>
+                <p>12€</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="race-btns">
+            <a
+              href="https://es.wikiloc.com/rutas-senderismo/caminada-inclusiva-rocanolich-2025-207961390"
+              target="_blank"
+              class="download-link"
+              ><i class="fa-solid fa-map-location-dot"></i> Wikiloc</a
+            >
+            <a
+              href="./assets/tracks/Caminada_Rocanolich_2025.gpx"
+              download="Caminada_Rocanolich_2025.gpx"
+              class="download-link"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secció Vídeos -->
+    <section class="section background">
+      <div class="container">
+        <div class="space"></div>
+
+        <!-- Títol i descripció -->
+        <h2 class="text-center section-title">Vídeos de la cursa</h2>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <!-- Videos -->
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center gy-5"
+        >
+          <div class="video-div">
+            <h3 class="text-center">Rocanolich Race</h3>
+            <div class="card-overlay ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/TbstnZvT-GE?si=hBQXLpcuStVX2wYr"
+                title="Vídeo promocional cursa llarga"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Vídeo 1 -->
+          <div class="video-div">
+            <h3 class="text-center">Cursa llarga</h3>
+            <div class="card-overlay ratio ratio-16x9">
+              <video controls poster="./assets/img/poster_cursa_llarga.png">
+                <source
+                  src="./assets/videos/video_cursa_llarga.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- Vídeo 2 -->
+          <div class="video-div">
+            <h3 class="text-center">Cursa curta</h3>
+            <div class="card-overlay ratio ratio-16x9">
+              <video controls poster="./assets/img/poster_cursa_curta.png">
+                <source
+                  src="./assets/videos/video_cursa_curta.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- Vídeo 3 -->
+          <!-- <div class="video-div">
+            <h3 class="text-center">Caminada popular</h3>
+            <div class="card-overlay ratio ratio-16x9">
+              <video controls poster="./assets/img/poster_caminada_popular.png">
+                <source
+                  src="./assets/videos/video_caminada_popular.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div> -->
+
+          <!-- Vídeo 4 -->
+          <div class="video-div">
+            <h3 class="text-center">Consell d'alimentació</h3>
+            <div class="card-overlay ratio ratio-16x9">
+              <video
+                controls
+                poster="./assets/img/poster_consells_alimentacio.png"
+              >
+                <source
+                  src="./assets/videos/video_consells_alimentacio.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <div class="video-div">
+            <h3 class="text-center">Senyores Lauredianes</h3>
+            <div class="card-overlay ratio ratio-16x9">
+              <video controls poster="./assets/img/senyores_lauredianas.png">
+                <source
+                  src="./assets/videos/senyores_lauredianas.webm"
+                  type="video/webm"
+                />
+                El teu navegador no suporta el vídeo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secció Serveis -->
+    <section class="section background">
+      <div class="container">
+        <h2 class="text-center section-title mb-5">Serveis</h2>
+
+        <div class="serveis-container">
+          <div class="servei">
+            <span class="material-symbols-outlined icon"> queue_music </span>
+            <h3 class="serveis-title">Animació</h3>
+            <p>Escalfament i música per viure l’experiència!</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon"> water_bottle </span>
+            <h3 class="serveis-title">Avituallament</h3>
+            <p>Tres punts per recuperar forces</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon"> memory </span>
+            <h3 class="serveis-title">Cronometratge</h3>
+            <p>Temps precís amb el sistema TopCrono</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon">
+              social_leaderboard
+            </span>
+            <h3 class="serveis-title">Medalla Finisher</h3>
+            <p>Premi per a tots els que creuin la meta!</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon"> child_friendly </span>
+            <h3 class="serveis-title">Ludoteca</h3>
+            <p>Els més petits es diverteixen mentre tu corres.</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon"> photo_camera </span>
+            <h3 class="serveis-title">Fotografia i vídeo</h3>
+            <p>Captura els teus millors moments. Gratis!</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon">
+              physical_therapy
+            </span>
+            <h3 class="serveis-title">Massatge</h3>
+            <p>Recupera’t amb un massatge a l’arribada</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon">
+              medical_services
+            </span>
+            <h3 class="serveis-title">Assistència</h3>
+            <p>Equip mèdic disponible en tot moment</p>
+          </div>
+
+          <div class="servei">
+            <span class="material-symbols-outlined icon"> local_parking </span>
+            <h3 class="serveis-title">Pàrquing</h3>
+            <p>Espai reservat. Vine amb temps!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space"></div>
+    </section>
+
+    <!-- Secció Horaris -->
+    <section class="section background" id="programa">
+      <div class="container">
+        <h2 class="text-center section-title">Programa Rocanolich 2025</h2>
+
+        <div class="timeline">
+          <p class="timeline-day-title">📅 Divendres 9 de maig 2025</p>
+          <div class="timeline-item">
+            <span class="horari">🕔 17h - 20h</span>
+            <span class="activitat">🏅 Recollida de dorsals</span>
+          </div>
+
+          <p class="timeline-day-title">📅 Dissabte 10 de maig 2025</p>
+          <div class="timeline-item">
+            <span class="horari">🕢 7:30h - 10h</span>
+            <span class="activitat"
+              >👟 Rebuda de corredors i recollida de dorsals</span
+            >
+          </div>
+
+          <div class="timeline-item highlighted">
+            <span class="horari">🏁 9h</span>
+            <span class="activitat">🏃‍♂️ Sortida cursa llarga</span>
+          </div>
+
+          <div class="timeline-item highlighted">
+            <span class="horari">🏁 10h</span>
+            <span class="activitat">🏃‍♀️ Sortida cursa curta</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">🔥 10h</span>
+            <span class="activitat"
+              >💪 Escalfament dirigit a càrrec dels alumnes de BP AFEL B</span
+            >
+          </div>
+
+          <div class="timeline-item highlighted">
+            <span class="horari">🚶‍♂️ 10:10h</span>
+            <span class="activitat">♿ Sortida caminada inclusiva</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">⏳ 10:50h</span>
+            <span class="activitat"
+              >🎉 Hora prevista arribada primers corredors</span
+            >
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">🎤 11h</span>
+            <span class="activitat">🏅 Acte d'homenatge a Marc Pimienta</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">🥤 11:30h</span>
+            <span class="activitat">🍌 Avituallament final</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">🏆 12:30h</span>
+            <span class="activitat"
+              >🏅 Entrega de premis als guanyadors/es</span
+            >
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">⏳ 13h</span>
+            <span class="activitat"
+              >🎊 Hora prevista arribada darrers corredors</span
+            >
+          </div>
+
+          <div class="timeline-item">
+            <span class="horari">🎶 15h</span>
+            <span class="activitat">🎉 Fi de festa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secció Partners -->
+    <section class="section background-white">
+      <div class="container partners">
+        <h2 class="text-center section-title">Partners</h2>
+
+        <div class="space"></div>
+
+        <div class="logos">
+          <img src="./assets/img/Logo St. Julià.png" alt="Comú Sant Julià" />
+
+          <img src="./assets/img/logo_CreuRoja.svg" alt="Creu Roja" />
+
+          <img
+            src="./assets/img/logo_eleclerc_hiperandorra.jpg"
+            alt="Eclerc Andorra"
+          />
+
+          <img src="./assets/img/logo_grup_becier.jpg" alt="Grup Becier" />
+
+          <img
+            src="./assets/img/logo-1-2.png"
+            alt="Federació Andorra Muntanya"
+          />
+
+          <img src="./assets/img/logo_LAU_Esport.png" alt="Lau Sport log" />
+
+          <img src="./assets/img/logo_flaix.png" alt="Logo Flaix" />
+
+          <img src="./assets/img/logo_crown.png" alt="Logo Crown" />
+
+          <img src="./assets/img/logo_naturland.png" alt="Naturland Logo" />
+
+          <img src="./assets/img/multisegur.jpg" alt="logo multisegur" />
+
+          <img
+            src="./assets/img/logo_senyoreshot.png"
+            alt="logo senyores lauredianas"
+          />
+
+          <img
+            src="./assets/img/Logo_standar.JPG"
+            alt="Formació Professional"
+          />
+        </div>
+      </div>
+
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById('header').classList.add('fade-out');
+      }, 3000); // Desaparece después de 3 segundos
+
+      setTimeout(() => {
+        document.getElementById('fixed-button').classList.add('visible');
+      }, 4000); // Botón aparece después de 4 segundos
+
+      setTimeout(() => {
+        document.getElementById('youtube-video').src =
+          'https://www.youtube.com/embed/TbstnZvT-GE?si=hBQXLpcuStVX2wYr&autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&playlist=TbstnZvT-GE&loop=1';
+      }, 3000); // 5000ms = 5 segons
+
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('nav');
+        if (window.scrollY > 500) {
+          // Quan baixem més de 50 píxels
+          document.body.classList.add('scrolled');
+        } else {
+          document.body.classList.remove('scrolled');
+        }
+      });
+
+      function updateCountdown() {
+        const marathonDate = new Date('May 10, 2025 09:00:00').getTime();
+        const now = new Date().getTime();
+        const timeLeft = marathonDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById(
+          'timer'
+        ).innerHTML = `<span>${days}d</span> <span>${hours}h</span> <span>${minutes}m</span> <span>${seconds}s</span>`;
+
+        if (timeLeft < 0) {
+          document.getElementById('timer').innerHTML =
+            '¡La maratón ha comenzado!';
+        }
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

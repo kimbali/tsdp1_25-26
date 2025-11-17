@@ -1,0 +1,63 @@
+button:hover{
+
+}
+
+.button1{
+    background-color:yellow;
+    border-radius: 30px;
+padding: 10px;
+border: none;
+}
+
+.button2{
+    background-color: orange;
+    border-radius: 30px;
+    padding: 10px;
+border: none;
+}
+
+a{
+color:indianred;
+
+}
+
+
+p{
+color:green
+}
+
+.button1:hover{
+    opacity: 0.10;
+    padding:20px;
+    cursor: pointer;
+}
+
+
+.button2:hover{
+    opacity: 0.10;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+
+ .uber-button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 110px;
+    cursor:wait;
+    transition: all 0.15s;
+  }
+
+  .uber-button:hover {
+    opacity: 0.8;
+    padding:40px;
+  }
+
+
+
+  .current {
+    color: green;
+  }

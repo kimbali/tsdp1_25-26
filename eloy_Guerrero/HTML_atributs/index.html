@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MiniWeb — La Botigueta Geek</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header id="capcalera">
+      <h1>La Botigueta Geek</h1>
+      <div class="nav-bg">
+        <nav class="navegacio-principal" aria-label="Navegació principal">
+          <ul>
+            <li title="Torna a la pàgina principal">
+              <a class="nav-link" href="#inici">Inici</a>
+            </li>
+            <li title="Mira tots els productes disponibles">
+              <a class="nav-link" href="#productes">Productes</a>
+            </li>
+            <li title="Envia’ns un missatge o consulta">
+              <a class="nav-link" href="#contacte">Contacte</a>
+            </li>
+            <li>
+              <a
+                href="<https://example.com>"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link"
+                title="Obre el blog"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenidor ombra">
+      <section class="inici" id="inici">
+        <h2>Inici</h2>
+        <p>Benvinguts!</p>
+        <a href="#productes">Vés a productes</a>
+      </section>
+
+      <section id="productes">
+        <h2>Productes</h2>
+        <div class="consoles">
+          <article class="targeta" data-rol="producte">
+            <img
+              src="img/consola.jpg"
+              alt="Consola retro gris"
+              width="300"
+              height="200"
+            />
+            <h3>Poli station 22</h3>
+            <p>Podem veure aquesta consola retro de color gris</p>
+          </article>
+          <article class="targeta" data-rol="producte">
+            <img
+              src="img/nintendo64.jpg"
+              alt="Consola retro gris"
+              width="300"
+              height="200"
+            />
+            <h3>Nintendo 64</h3>
+            <p>Podem veure aquesta consola retro de color gris</p>
+          </article>
+          <article class="targeta" data-rol="producte">
+            <img
+              src="img/segaAturn.jpg"
+              alt="Consola retro gris"
+              width="300"
+              height="200"
+            />
+            <h3>Sega Aturn</h3>
+            <p>Podem veure aquesta consola retro de color negre</p>
+          </article>
+        </div>
+        <ol class="gadget" start="3" reversed>
+          <li>Gadget C</li>
+          <li>Gadget B</li>
+          <li>Gadget A</li>
+        </ol>
+        <div class="botons-gadgets">
+          <a href="#" class="btn primari">Primari</a>
+          <a href="#" class="btn secundari">Secundari</a>
+        </div>
+
+        <figure class="classica">
+          <img src="img/consola.jpg" alt="consola retro gris" />
+          <figcaption>Consola clàssica d’estil retro</figcaption>
+        </figure>
+      </section>
+      <div class="cataleg">
+        <a href="docs/catalog.pdf">Descarrega el catàleg</a>
+      </div>
+
+      <section id="contacte">
+        <h2>Contacte</h2>
+        <p>
+          Correu:
+          <a class="contact-link" href="mailto:info@botiguetageek.com"
+            >info@botiguetageek.com</a
+          >
+        </p>
+        <p>
+          Telèfon:
+          <a class="contact-link" href="tel:+376123456">+376 123 456</a>
+        </p>
+
+        <form>
+          <fieldset>
+            <legend>Dades personals</legend>
+            <label for="nom">Nom</label>
+            <input
+              id="nom"
+              name="nom"
+              type="text"
+              placeholder="Escriu el teu nom"
+              required
+            />
+
+            <label for="cognoms">Cognoms</label>
+            <input
+              id="cognoms"
+              name="noms"
+              type="text"
+              placeholder="Escriu els teus cognoms"
+              required
+            />
+
+            <label
+              >Data de naixement: <input type="date" name="naixement" /></label
+            ><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Dades de contacte</legend>
+
+            <label for="email">Correu</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="nom@exemple.com"
+              required
+            />
+
+            <label>Contrasenya: <input type="password" name="pass" /></label>
+
+            <label for="telefon">Telèfon:</label>
+            <input
+              type="tel"
+              id="telefon"
+              name="telefon"
+              placeholder="+376 123 456"
+              required
+              pattern="^\+?[0-9 ]{6,15}$"
+              title="Escriu un telèfon amb o sense prefix + (ex: +376 123 456)"
+            />
+          </fieldset>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" name="condicions" />
+            <span class="checkmark"></span>
+            Accepto els termes i condicions
+          </label>
+
+          <label for="preferencia">Preferència</label>
+          <select id="preferencia" name="preferencia" required>
+            <option value="" disabled selected>Tria una opció</option>
+            <option value="novetats">Novetats</option>
+            <option value="ofertes">Ofertes</option>
+          </select>
+
+          <button type="submit">Registrar</button>
+
+          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" disabled class="btn">Suscriu-me</button>
+        </form>
+      </section>
+    </main>
+
+    <div class="contingut-secundari contenidor ombra">
+      <p>
+        Un jugador famós va dir:
+        <q lang="en">Power to the players.</q>
+      </p>
+      <div class="joc-secundari">
+        <table class="videojoc joc">
+          <thead>
+            <th>Nom del joc</th>
+            <th>Any de llançament</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Super Mario Bros</td>
+              <td>1985</td>
+            </tr>
+            <tr>
+              <td>The Legend of Zelda</td>
+              <td>1986</td>
+            </tr>
+            <tr>
+              <td>F-Zero</td>
+              <td>1991</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total productes: 3</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <section class="joc">
+          <p>
+            Estic estudiant
+            <abbr title="HyperText Markup Language">HTML</abbr> i
+            <abbr title="Cascading Style Sheets">CSS</abbr>.
+          </p>
+
+          <p>
+            El concepte més <mark>important</mark> és entendre l’estructura.
+          </p>
+
+          <p>
+            Avui és <time datetime="2025-09-15">15 de setembre de 2025</time>.
+          </p>
+
+          <p>
+            Progrés de l’activitat:
+            <progress value="60" max="100">60%</progress>
+          </p>
+
+          <p>Bateria restant: <meter value="0.7">70%</meter></p>
+        </section>
+
+        <section class="joc">
+          <p>
+            Aquest producte és
+            <em>molt popular</em>i altament recomanat pels <sup>usuaris</sup>.
+          </p>
+
+          <p>
+            Oferta vàlida fins al <strong>20 de setembre </strong>(només mentre
+            hi hagi estoc).
+          </p>
+
+          <p>Preu antic: 49,90 € — Nou preu: <small>39,90 €</small></p>
+
+          <p>
+            Fórmula matemàtica: <sub>x2 + y2 = z2</sub> Fórmula química:
+            <sup>H2O</sup>
+          </p>
+        </section>
+      </div>
+
+      <section>
+        <h3>Preguntes freqüents</h3>
+
+        <details open>
+          <summary>Quins són els horaris de la botiga?</summary>
+          <p>De dilluns a divendres de 10h a 19h, dissabtes de 10h a 14h.</p>
+        </details>
+      </section>
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/lEW0YTORA5E?si=UV4XL4A12GjT-HZY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Eloy Guerrero Terron <small>&copy; 2025</small></h3>
+    </footer>
+  </body>
+</html>
